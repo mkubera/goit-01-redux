@@ -7,6 +7,7 @@ import { increment, decrement } from "./reducers/actions";
 
 const App = () => {
   const counter = useSelector((state) => state.counter);
+  console.log(counter);
   const dispatch = useDispatch();
 
   return (
