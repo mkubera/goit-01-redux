@@ -1,7 +1,5 @@
-import React from "react";
-
 const Counter = ({ value, onIncrement, onDecrement }) => {
-  console.log(onIncrement);
+  // console.log(onIncrement);
   return (
     <div>
       <button onClick={onIncrement}>+1</button>
