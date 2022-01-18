@@ -5,16 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./reducers/index.js";
+// import { configureStore } from "@reduxjs/toolkit";
+// import counterReducer from "./reducers/index.js";
+import { store } from "./store.js";
 
 // const reducers = combineReducers({ counter: reducer });
 // const store = createStore(reducers);
-const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+// const store = configureStore({
+//   reducer: {
+//     counter: counterReducer,
+//   },
+// });
 
 ReactDOM.render(
   <Provider store={store}>
